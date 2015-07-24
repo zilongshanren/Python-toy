@@ -192,7 +192,7 @@ url2 = 'http://sj.qq.com/myapp/cate/appList.htm?orgame=2&categoryId=0&pageSize=2
 cocos2d_game = collect_stats(url2)
 rank = 1
 now = datetime.datetime.now()
-csv = "/Users/guanghui/Downloads/cocos-check-tecent/cocos2d-stats-tencent-" + now.strftime("%Y%m%d-%H%M%S") + ".csv"
+csv = "/home/cocos/www/cocos-check-tencent/cocos2d-stats-tencent-" + now.strftime("%Y%m%d-%H%M%S") + ".csv"
 with open(csv, "w") as stats_file:
     stats_file.write('rank,game-name               ,download-count           ,detected-engine       ,size\n')
     for game in cocos2d_game:

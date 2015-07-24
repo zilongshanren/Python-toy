@@ -246,7 +246,7 @@ print cocos2d_game
 # stats = t.render(c)
 # #print stats
 now = datetime.datetime.now()
-csv = "/Users/guanghui/Downloads/cocos-check-360/cocos2d-stats-360-" + now.strftime("%Y%m%d-%H%M%S") + ".csv"
+csv = "/home/cocos/www/cocos-check-360/cocos2d-stats-360-" + now.strftime("%Y%m%d-%H%M%S") + ".csv"
 with open(csv, "w") as stats_file:
     stats_file.write('rank,game-name               ,weekly-download        ,detected-engine         ,size\n')
     for game in cocos2d_game:
